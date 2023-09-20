@@ -1,6 +1,6 @@
 from typing import List
-
-
+pattern_list = []
+combined_string = " "
 def match(pattern: List[str], source: List[str]) -> List[str]:
     """Attempts to match the pattern to the source.
 
@@ -34,6 +34,16 @@ def match(pattern: List[str], source: List[str]) -> List[str]:
         # WARNING: this condition contains the bulk of the code for the assignment
         # If you get stuck on this one, we encourage you to attempt the other conditions
         #   and come back to this one afterwards
+        elif pattern[pind] == '%':
+            if pind == len(pattern) - 1:
+                for val in source:
+                    pattern_list.append(source[sind])
+                    sind+=1
+                    print(pattern_list)                    
+                    print(combined_string.join(pattern_list))
+                    
+                    #sentence = combined_string.join(pattern_list)
+                #result.append(combined_string.join(pattern_list))
 
         # 3) if we reached the end of the source but not the pattern
         elif pind < len(pattern) and sind == len(source):
