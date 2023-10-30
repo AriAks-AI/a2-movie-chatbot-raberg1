@@ -13,8 +13,8 @@ This assignment is about learning and applying the while loop and iterating thro
 ## Reflection Questions
 1. What was difficult for you while completing the match function?
 
-
+I couldn't figure out how to make the %'s work because at first they did not make sense to me. I read through all of the notes.py and I was able to grasp it a little better.
 
 2. Explain how you could use the match function for extracting information from a movie database.
 
-
+You can use the match function becuase it looks for the base question within a boader statement and is able to amke your chatbot more versatile. It is useful for the chatbot part of the program and for talking with the user.
